@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Lumina Bookstore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>">
+    <link rel="stylesheet" href="../assets/css/styles.css?v=fixed3">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="../index.html" class="logo">Lumina<span class="logo-accent">.</span></a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../index.html#books" class="nav-link">Books</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="profile.html" class="nav-link active">Profile</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+                <a href="profile.html" class="icon-btn profile-btn" aria-label="Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+                <button class="icon-btn settings-btn" id="settingsBtn" aria-label="Settings">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path
+                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="container section-padding">
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-avatar">U</div>
+                <div class="profile-info">
+                    <h1>Ujjwal</h1>
+                    <p>Member since 2025</p>
+                </div>
+            </div>
+            <div class="profile-sections">
+                <div class="profile-card">
+                    <h3>Order History</h3>
+                    <div class="order-list">
+                        <div class="order-item">
+                            <div class="order-details">
+                                <span class="order-id">#ORD-2025-001</span>
+                                <span class="order-date">Dec 11, 2025</span>
+                            </div>
+                            <span class="order-status completed">Delivered</span>
+                            <span class="order-total">₹4139.00</span>
+                        </div>
+                        <div class="order-item">
+                            <div class="order-details">
+                                <span class="order-id">#ORD-2025-002</span>
+                                <span class="order-date">Dec 15, 2025</span>
+                            </div>
+                            <span class="order-status processing">Processing</span>
+                            <span class="order-total">₹1169.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <h3>Account Settings</h3>
+                    <form class="profile-form">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" value="ujjwal@example.com" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label>Address</label>
+                            <textarea>123 Book St, Library City</textarea>
+                        </div>
+                        <button class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="logo">Lumina.</span>
+                <p>&copy; 2025 Lumina Bookstore.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="settings-modal" id="settingsModal">
+        <div class="settings-header">
+            <h3>Settings</h3>
+            <button class="icon-btn" id="closeSettings">&times;</button>
+        </div>
+        <div class="settings-body">
+            <div class="setting-item">
+                <span>Theme</span>
+                <div class="theme-selector">
+                    <label class="theme-option">
+                        <input type="radio" name="theme" value="light" checked>
+                        <span>Light</span>
+                    </label>
+                    <label class="theme-option">
+                        <input type="radio" name="theme" value="dark">
+                        <span>Dark</span>
+                    </label>
+                </div>
+            </div>
+            <div class="setting-item">
+                <span>Notifications</span>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="toastContainer" class="toast-container"></div>
+    <script src="../assets/js/app.js?v=2"></script>
+</body>
+
+</html>
